@@ -8,145 +8,101 @@
 </head>
 <body>
 <!-- partial:index.partial.html -->
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title> My Personal Page </title>
-  </head>
-
+  <title>My Personal Page</title>
 <header class="c-site-header">
-  <h1>My Personal Page 
-  </h1>
+  
+<h1>
+  My personal Page
+</h1>
 </header>
-  
- <main>
 
-<nav aria-label="Main Site Links.">
-  <label class="logo"></label>
-  <ul>
-    <li>
-      <a class="active" href="#">Home </a>
-    </li>
-    
-    <li>
-      <a href="#">My Works</a>
-    </li>
-    
-    <li>
-      <a href="#">Contact me</li>
-    </li>
-    
-  </ul>
+<main>
+  <nav aria-label="Main Site Links.">
+    <label class="logo">ICDI-TMD-2024</label>
+    <ul>
+      <li>
+        <a class="active" href="#">Home</a>
+      </li>
+      
+      <li>
+        <a class="active" href="#">My Works</a>
+      </li>
+      
+      <li>
+        <a class="active" href="#">Contact me</a>
+      </li>
+    </ul>
+  </nav>
   
-</nav>
-   
-   <h3>
-    Hello All! </h3>
-   <p>
-    My name is Shoaib, i am from Balochitan.
-    I am 22 years old, it has been almost 7 years that i left my homeland and currently i live in England.
-     i went to school in Austria where i lived for three years.
-     I always wanted to start a career which is interesting for me but i always was confused what i find interesting until i found out what i love the most and that was working with camputer, then i realised that i enjoy coding and programing.
-     now everyday i try to learn new things about coding and programing.
-   </p>
-     
-   <div class="content">
-   <div class="my hobbies">
-     <h3>
-       My hobbies;
-     </h3>
-     <p>
-       I love playnig Football and watching EPL
-       I love coding and programing.
-       <br>here are video and picture of my favorit Football team </br>
-     </p>
-   </div>
-   <div>
-     <img class="image" scr="https://www.arsenal.com/sites/default/files/styles/large_16x9/public/images/chelsea-pre-season.png?itok=tMAj6MOz">
-       </img>
-       </div>
+  <h3>Hello All!</h3>
+  <p>My name is Shoaib, i am from Balochitan. I am 22 years old, it has been almost 7 years that i left my homeland and currently i live in England.i lived in austria for three years. I always wanted to start a career which is interesting for me but i always was confused what i find interesting until i found out what i love the most and that was working with camputer, then i realised that i enjoy coding and programing. now everyday i try to learn new things about coding and programing.
+currently i am applying for a course at code your future,
+    <a href="https://codeyourfuture.io" target="blank">click
+    </a>
+  </p>
+  <div class="content">
+    <div class="my hobbies">
+      <h3>My hobbies;</h3>
+      <p>I love playnig Football and watching EPL. I love coding and programing.<br>
+        video and image of my favorite club;
+      </p>
+    </div>
+    <div><img class="image" src="https://cdn.vox-cdn.com/thumbor/fBB5f8cVlGXF_7jRGrWRMi8ciVc=/0x0:3000x2088/1820x1213/filters:focal(871x396:1351x876)/cdn.vox-cdn.com/uploads/chorus_image/image/71291933/1418492202.0.jpg"  alt=""></div>
+    <div>
+      <iframe src="https://www.youtube.com/embed/VE3XeM2nrSc" title="YouTube video player"> </iframe> 
+                                                                                                                  </div>
+  </div>
+</main>
+<footer class="c-site-footer" >
+  <p>leave a comment:</p>
+<ul id="list"></ul>
+<input id="text" />
+<button id="button">add</button>
   
-<div>
-  <iframe class="video" scr="https://youtu.be/07M22KLkDro"></ifram>
-</div>
- </main>
-  <footer class="c-site-footer">copyright
+  copyright
 </footer>
-  <script>
-    function getWords(type) {
-  // Return words of a given type, or all words if type is 'WORD'
-  let words = [
-    {type: 'ADJECTIVE', value: 'big'},
-    {type: 'ADJECTIVE', value: 'purple'},
-    {type: 'ADJECTIVE', value: 'new'},
-    {type: 'ADJECTIVE', value: 'interesting'},
-    {type: 'ADJECTIVE', value: 'curious'},
-    {type: 'ADJECTIVE', value: 'happy'},
-    {type: 'ADJECTIVE', value: 'busy'},
-    {type: 'ADJECTIVE', value: 'tiny'},
-    {type: 'NOUN', value: 'umbrella'},
-    {type: 'NOUN', value: 'knee'},
-    {type: 'NOUN', value: 'banana'},
-    {type: 'NOUN', value: 'platypus'},
-    {type: 'NOUN', value: 'cat'},
-    {type: 'NOUN', value: 'mouse'},
-    {type: 'NOUN', value: 'house'},
-    {type: 'VERB', value: 'impressed'},
-    {type: 'VERB', value: 'honoured'},
-    {type: 'VERB', value: 'saw'},
-    {type: 'VERB', value: 'ate'},
-    {type: 'VERB', value: 'surprised'},
-    {type: 'VERB', value: 'annoyed'},
-    {type: 'VERB', value: 'touched'},
-    {type: 'VERB', value: 'understood'},
-    {type: 'VERB', value: 'taught'},
-  ];
-  return words.filter(word => type === 'WORD' || word.type === type).map(word => word.value);
-}
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Hamburger Navbar</title>
+</head>
 
-function randomInt(n) {
-  // Return a random number from in [0, n[
-  return Math.floor(Math.random()*n);
-}
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="nav-logo"></a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">My Works</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+</body>
 
-function randomMember(arr) {
-  // Return a random member of the array
-  return arr[randomInt(arr.length)]
-}
+<script src="/main.js"></script>
+                             </html>
+<!-- partial -->
+  <script src='https://unpkg.com/jest-lite@1.0.0-alpha.4/dist/core.js'></script>
+<script src='https://unpkg.com/jest-lite@1.0.0-alpha.4/dist/prettify.js'></script><script  src="./script.js"></script>
 
-
-let element_noun2 = document.getElementById('noun2');
-element_noun2.innerText = randomMember(getWords('NOUN'));
-let element_verb = document.getElementById('verb');
-element_verb.innerText = randomMember(getWords('VERB'));
-let element_noun1 = document.getElementById('noun1');
-element_noun1.innerText = randomMember(getWords('NOUN'));
-let element_adjective = document.getElementById('adjective');
-element_adjective.innerText = randomMember(getWords('ADJECTIVE'));
-
-  </script>
+</body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
